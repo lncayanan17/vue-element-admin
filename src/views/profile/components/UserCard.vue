@@ -5,7 +5,7 @@
     </div>
 
     <div class="user-profile">
-      <div class="box-center">
+      <!-- <div class="box-center">
         <pan-thumb :image="user.avatar" :height="'100px'" :width="'100px'" :hoverable="false">
           <div>Hello</div>
           {{ user.role }}
@@ -14,27 +14,46 @@
       <div class="box-center">
         <div class="user-name text-center">{{ user.name }}</div>
         <div class="user-role text-center text-muted">{{ user.role | uppercaseFirst }}</div>
+      </div> -->
+
+      <div class="box-center">
+        <pan-thumb :image="user.avatar" :height="'100px'" :width="'100px'" :hoverable="false">
+          <div>Hello</div>
+          {{ user.role }}
+        </pan-thumb>
+      </div>
+      <div class="box-center">
+        <div class="user-name text-center">Mr. Robert Chan, Jr.</div>
+        <div class="user-role text-center text-muted">Client Admin</div>
       </div>
     </div>
 
     <div class="user-bio">
-      <div class="user-education user-bio-section">
+      <!-- <div class="user-education user-bio-section">
         <div class="user-bio-section-header"><svg-icon icon-class="education" /><span>Education</span></div>
         <div class="user-bio-section-body">
           <div class="text-muted">
             JS in Computer Science from the University of Technology
           </div>
         </div>
+      </div> -->
+
+      <div class="user-education user-bio-section">
+        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Employee No.</span></div>
+        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Position</span></div>
+        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Dept./Section/Sub Section</span></div>
+        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Date of Birth</span></div>
+        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Age</span></div>
       </div>
 
       <div class="user-skills user-bio-section">
-        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Skills</span></div>
+        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Monitor Productive Hours</span></div>
         <div class="user-bio-section-body">
           <div class="progress-item">
-            <span>Vue</span>
+            <!-- <span>Vue</span> -->
             <el-progress :percentage="70" />
           </div>
-          <div class="progress-item">
+          <!-- <div class="progress-item">
             <span>JavaScript</span>
             <el-progress :percentage="18" />
           </div>
@@ -45,7 +64,7 @@
           <div class="progress-item">
             <span>ESLint</span>
             <el-progress :percentage="100" status="success" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
