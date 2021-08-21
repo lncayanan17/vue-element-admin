@@ -10,7 +10,7 @@
         <el-col :span="18" :xs="24">
           <el-card>
             <el-tabs v-model="activeTab">
-              <el-tab-pane label="Contact Numbers" name="contact-numbers">
+              <el-tab-pane label="Contact Numbers" name="contacts">
                 <contacts />
               </el-tab-pane>
               <el-tab-pane label="Address" name="address">
@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       user: {},
-      activeTab: 'activity'
+      activeTab: 'contacts'
     }
   },
   computed: {
