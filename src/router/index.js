@@ -449,6 +449,7 @@ export const asyncRoutesOrig = [
 ]
 
 export const asyncRoutes = [
+  tableRouter,
   { path: '*', redirect: '/404', hidden: true }
 ]
 
